@@ -5,15 +5,11 @@ import java.math.RoundingMode;
 public class Task12 {
 
     public static BigDecimal benefit(BigDecimal sum, BigDecimal percent) {
-        // Устанавливаем точность округления до 9 знаков после запятой
-
-
-        // Ежемесячная капитализация
+        
         for (int i = 1; i <= 12; i++) {
             sum = sum.add(sum.multiply(percent).setScale(9, RoundingMode.HALF_UP));
         }
 
-        // Окончательное округление
         return sum.setScale(9, RoundingMode.HALF_UP);
     }
 

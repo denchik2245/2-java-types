@@ -4,7 +4,6 @@ public class Task13 {
 
     public static char toUpperCase(char c) {
 
-
         if (c >= 'a' && c <= 'z') {
 
             c = (char)(c - ('a' - 'A'));

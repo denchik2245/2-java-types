@@ -4,8 +4,6 @@ public class Task11 {
 
     public static float benefit(float sum, float percent) {
 
-        // TODO исправьте функцию, чтобы избежать накопления ошибки
-
         return (float) (sum * Math.pow(1.0 + percent, 12));
     }
 

@@ -3,7 +3,7 @@ package com.example.task08;
 public class Task08 {
 
     public static boolean solution() {
-        // Изменили тип переменной x на double и задали большое значение
+
         double x = Double.MAX_VALUE;
         return x == x + 1;
     }
